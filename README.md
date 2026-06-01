@@ -6,7 +6,7 @@ Sebaliknya, Singly Linked List menyimpan node pada lokasi memori yang tidak haru
 
 Akibatnya, kompleksitas akses pada Array adalah O(1), sedangkan pada Singly Linked List adalah O(n).
 
-2. Analisis Efisiensi Operasi Manipulasi
+## 2. Analisis Efisiensi Operasi Manipulasi
 
 Linked List lebih unggul dibandingkan Array ketika sering dilakukan operasi penyisipan (insertion) dan penghapusan (deletion) data, terutama pada bagian awal atau tengah struktur data.
 
@@ -16,7 +16,7 @@ Sedangkan pada Linked List, jika posisi node telah ditemukan, penyisipan atau pe
 
 Oleh karena itu, Linked List lebih efisien untuk aplikasi yang sering melakukan perubahan struktur data secara dinamis.
 
-3. Konsep Doubly Linked List
+## 3. Konsep Doubly Linked List
 
 Pada Doubly Linked List, setiap node terdiri dari tiga bagian:
 
@@ -32,7 +32,7 @@ Keberadaan pointer tambahan (prev) menyebabkan penggunaan memori menjadi lebih b
 
 Namun, keuntungan utamanya adalah penelusuran dapat dilakukan ke dua arah, yaitu maju dan mundur. Hal ini membuat operasi tertentu seperti traversal balik atau penghapusan node menjadi lebih fleksibel dan efisien.
 
-4. Mekanisme Circular Linked List
+## 4. Mekanisme Circular Linked List
 
 Circular Linked List adalah Linked List yang node terakhirnya tidak menunjuk ke NULL, melainkan kembali menunjuk ke node pertama (head).
 
@@ -49,7 +49,7 @@ Perbedaan utama secara teoritis adalah tidak adanya akhir (NULL) pada struktur m
 
 Contoh penggunaan Circular Linked List adalah sistem Round Robin Scheduling pada sistem operasi. Dalam metode ini, setiap proses mendapatkan giliran secara bergantian dan setelah proses terakhir selesai, giliran kembali ke proses pertama secara otomatis.
 
-5. Array Dinamis di Python
+## 5. Array Dinamis di Python
 
 Python List diimplementasikan sebagai Dynamic Array. Saat operasi append dilakukan dan kapasitas array masih tersedia, elemen baru cukup ditempatkan pada slot kosong sehingga proses berlangsung dalam O(1).
 
@@ -64,6 +64,6 @@ Proses penyalinan ini membutuhkan waktu O(n) karena seluruh elemen harus dipinda
 
 Meskipun demikian, Python melakukan penambahan kapasitas lebih besar dari kebutuhan saat ini (over-allocation), sehingga operasi append secara rata-rata (amortized) tetap memiliki kompleksitas O(1).
 
-Kesimpulan
+## Kesimpulan
 
 Array memiliki keunggulan pada akses data yang sangat cepat karena menggunakan memori kontinu, sedangkan Linked List unggul pada fleksibilitas penyisipan dan penghapusan data karena menggunakan pointer. Doubly Linked List menambah fleksibilitas traversal dengan biaya memori yang lebih besar. Circular Linked List cocok untuk proses yang bersifat berulang. Sementara itu, Python List menggunakan Dynamic Array yang memungkinkan ukuran struktur data bertambah secara otomatis sesuai kebutuhan.
