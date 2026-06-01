@@ -1,4 +1,4 @@
-##1. Karakteristik Memori dan Akses Data
+## 1. Karakteristik Memori dan Akses Data
 
 Array dapat melakukan akses elemen dalam waktu konstan O(1) karena data disimpan pada lokasi memori yang berurutan (kontinu). Setiap elemen memiliki indeks yang dapat langsung dihitung alamat memorinya menggunakan rumus tertentu. Karena alamat memori dapat diketahui secara langsung, sistem tidak perlu menelusuri elemen satu per satu.
 
